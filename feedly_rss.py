@@ -212,8 +212,8 @@ def build_feed(items: list[dict]) -> None:
         fe.title(item["title"])
         fe.link(href=item["url"])
         fe.description(description or item["title"])
-        if body:
-            fe.content(body, type="text")
+        # if body:
+        #     fe.content(body, type="text")
         fe.pubDate(pub_date)
         fe.category({"term": item["category"]})
 
