@@ -5,7 +5,7 @@
     </head>
     <body>
         <outline text="Dagospia" title="Dagospia" type="rss"
-                 xmlUrl="https://tisone.my.to/rss.xml?v=2"
+                 xmlUrl="https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml?v=2"
                  htmlUrl="https://m.dagospia.com/"/>
     </body>
 </opml>

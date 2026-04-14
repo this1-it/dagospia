@@ -6,6 +6,7 @@ import re
 import time
 import sys
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from typing import Optional
 from urllib.parse import urljoin
 
@@ -117,33 +118,70 @@ def scrape_homepage() -> list[dict]:
     return items
 
 
-def get_pub_date(url: str) -> datetime:
+_IT_MONTHS = {
+    "gen": 1, "feb": 2, "mar": 3, "apr": 4, "mag": 5, "giu": 6,
+    "lug": 7, "ago": 8, "set": 9, "ott": 10, "nov": 11, "dic": 12,
+}
+_ROME_TZ = ZoneInfo("Europe/Rome")
+
+
+def _parse_data_ora(text: str) -> Optional[datetime]:
+    """Parse Italian date like '14 apr 2026 15:20' with Europe/Rome timezone."""
+    try:
+        parts = text.strip().split()
+        # parts: ['14', 'apr', '2026', '15:20']
+        day = int(parts[0])
+        month = _IT_MONTHS[parts[1].lower()]
+        year = int(parts[2])
+        hour, minute = (int(x) for x in parts[3].split(":"))
+        return datetime(year, month, day, hour, minute, tzinfo=_ROME_TZ)
+    except (KeyError, ValueError, IndexError):
+        return None
+
+
+def get_article_meta(url: str) -> tuple:
+    """Fetch article page, return (pub_date, description)."""
     soup = fetch(url)
     if soup is None:
-        return datetime.now(timezone.utc)
+        return datetime.now(timezone.utc), ""
 
-    # try Open Graph / article meta
-    for prop in ("article:published_time", "og:updated_time", "date"):
-        tag = soup.find("meta", property=prop) or soup.find("meta", attrs={"name": prop})
-        if tag and tag.get("content"):
-            try:
-                dt_str = tag["content"]
-                # handle both with-tz and without-tz ISO strings
-                if dt_str.endswith("Z"):
-                    dt_str = dt_str[:-1] + "+00:00"
-                return datetime.fromisoformat(dt_str)
-            except ValueError:
-                pass
-
-    # try <time datetime="...">
-    time_tag = soup.find("time", datetime=True)
+    # --- pub date ---
+    pub_date = None
+    time_tag = soup.find("time", class_="data-ora")
     if time_tag:
-        try:
-            return datetime.fromisoformat(time_tag["datetime"])
-        except ValueError:
-            pass
+        pub_date = _parse_data_ora(time_tag.get_text())
+        if not pub_date:
+            log.warning("could not parse data-ora: %r", time_tag.get_text())
 
-    return datetime.now(timezone.utc)
+    if pub_date is None:
+        for prop in ("article:published_time", "og:updated_time", "date"):
+            tag = soup.find("meta", property=prop) or soup.find("meta", attrs={"name": prop})
+            if tag and tag.get("content"):
+                try:
+                    dt_str = tag["content"]
+                    if dt_str.endswith("Z"):
+                        dt_str = dt_str[:-1] + "+00:00"
+                    pub_date = datetime.fromisoformat(dt_str)
+                    break
+                except ValueError:
+                    pass
+
+    if pub_date is None:
+        pub_date = datetime.now(timezone.utc)
+
+    # --- description: <p> inside .hero-section ---
+    hero = soup.find(class_="hero-section")
+    description = ""
+    if hero:
+        p = hero.find("p")
+        if p:
+            description = p.get_text(separator=" ", strip=True)
+
+    # --- body: all <p> tags text joined ---
+    paragraphs = [p.get_text(separator=" ", strip=True) for p in soup.find_all("p") if p.get_text(strip=True)]
+    body = "\n\n".join(paragraphs)
+
+    return pub_date, description, body
 
 
 def build_feed(items: list[dict]) -> None:
@@ -159,8 +197,10 @@ def build_feed(items: list[dict]) -> None:
         log.debug("[%d/%d] %s", idx + 1, len(items), item["title"][:60])
 
         pub_date = datetime.now(timezone.utc)
+        description = item["title"]
+        body = ""
         if FETCH_PUB_DATE:
-            pub_date = get_pub_date(item["url"])
+            pub_date, description, body = get_article_meta(item["url"])
             time.sleep(REQUEST_DELAY)
 
         # ensure timezone-aware
@@ -171,7 +211,9 @@ def build_feed(items: list[dict]) -> None:
         fe.id(item["url"])
         fe.title(item["title"])
         fe.link(href=item["url"])
-        fe.description(item["title"])
+        fe.description(description or item["title"])
+        if body:
+            fe.content(body, type="text")
         fe.pubDate(pub_date)
         fe.category({"term": item["category"]})
 
