@@ -2,10 +2,13 @@
 """Dagospia RSS feed generator — scrapes m.dagospia.com and outputs dagospia.xml."""
 
 import logging
+import os
 import re
 import time
 import sys
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 from typing import Optional
 from urllib.parse import urljoin
@@ -184,7 +187,48 @@ def get_article_meta(url: str) -> tuple:
     return pub_date, description, body
 
 
+def load_rss_cache(path: str) -> dict[str, dict]:
+    """Parse existing RSS file → {url: {title, description, pub_date, category, image, mime}}."""
+    cache: dict[str, dict] = {}
+    if not os.path.exists(path):
+        return cache
+    try:
+        tree = ET.parse(path)
+    except ET.ParseError as exc:
+        log.warning("cache parse error, ignoring: %s", exc)
+        return cache
+    ns = {"content": "http://purl.org/rss/1.0/modules/content/"}
+    for item in tree.findall(".//item"):
+        link = (item.findtext("link") or "").strip()
+        if not link:
+            continue
+        pub_date_str = item.findtext("pubDate") or ""
+        pub_date = None
+        if pub_date_str:
+            try:
+                pub_date = parsedate_to_datetime(pub_date_str)
+            except Exception:
+                pass
+        if pub_date is None:
+            pub_date = datetime.now(timezone.utc)
+        enclosure = item.find("enclosure")
+        image = enclosure.get("url") if enclosure is not None else None
+        mime = enclosure.get("type") if enclosure is not None else None
+        cache[link] = {
+            "title": (item.findtext("title") or "").strip(),
+            "description": (item.findtext("description") or "").strip(),
+            "pub_date": pub_date,
+            "category": (item.findtext("category") or "").strip(),
+            "image": image,
+            "mime": mime,
+        }
+    log.debug("Loaded %d items from cache %s", len(cache), path)
+    return cache
+
+
 def build_feed(items: list[dict]) -> None:
+    cache = load_rss_cache(OUTPUT_FILE)
+
     fg = FeedGenerator()
     fg.id(BASE_URL)
     fg.title("Dagospia")
@@ -193,35 +237,55 @@ def build_feed(items: list[dict]) -> None:
     fg.language("it")
     fg.lastBuildDate(datetime.now(timezone.utc))
 
+    entries: list[dict] = []
     for idx, item in enumerate(items):
         log.debug("[%d/%d] %s", idx + 1, len(items), item["title"][:60])
 
-        pub_date = datetime.now(timezone.utc)
-        description = item["title"]
-        body = ""
-        if FETCH_PUB_DATE:
-            pub_date, description, body = get_article_meta(item["url"])
-            time.sleep(REQUEST_DELAY)
+        url = item["url"]
+        if url in cache:
+            cached = cache[url]
+            log.debug("cache hit: %s", url)
+            pub_date = cached["pub_date"]
+            description = cached["description"] or item["title"]
+            image = cached["image"] or item["image"]
+            mime = cached["mime"]
+            title = cached["title"] or item["title"]
+            category = cached["category"] or item["category"]
+        else:
+            pub_date = datetime.now(timezone.utc)
+            description = item["title"]
+            image = item["image"]
+            mime = None
+            title = item["title"]
+            category = item["category"]
+            if FETCH_PUB_DATE:
+                pub_date, description, _body = get_article_meta(url)
+                time.sleep(REQUEST_DELAY)
 
         # ensure timezone-aware
         if pub_date.tzinfo is None:
             pub_date = pub_date.replace(tzinfo=timezone.utc)
 
-        fe = fg.add_entry()
-        fe.id(item["url"])
-        fe.title(item["title"])
-        fe.link(href=item["url"])
-        fe.description(description or item["title"])
-        # if body:
-        #     fe.content(body, type="text")
-        fe.pubDate(pub_date)
-        fe.category({"term": item["category"]})
-
-        if item["image"]:
-            # determine MIME type from extension
-            ext = item["image"].rsplit(".", 1)[-1].lower()
+        # resolve MIME from URL if not cached
+        if image and not mime:
+            ext = image.rsplit(".", 1)[-1].lower()
             mime = "image/webp" if ext == "webp" else f"image/{ext}" if ext in ("jpg", "jpeg", "png", "gif") else "image/jpeg"
-            fe.enclosure(item["image"], 0, mime)
+
+        entries.append({"url": url, "title": title, "description": description,
+                        "pub_date": pub_date, "category": category, "image": image, "mime": mime})
+
+    entries.sort(key=lambda e: e["pub_date"], reverse=False)
+
+    for entry in entries:
+        fe = fg.add_entry()
+        fe.id(entry["url"])
+        fe.title(entry["title"])
+        fe.link(href=entry["url"])
+        fe.description(entry["description"])
+        fe.pubDate(entry["pub_date"])
+        fe.category({"term": entry["category"]})
+        if entry["image"] and entry["mime"]:
+            fe.enclosure(entry["image"], 0, entry["mime"])
 
     fg.rss_file(OUTPUT_FILE, pretty=True)
     log.debug("Feed written → %s", OUTPUT_FILE)
@@ -233,7 +297,6 @@ def main() -> None:
         log.error("no articles found — site structure may have changed")
         sys.exit(1)
     build_feed(items)
-    import xml.etree.ElementTree as ET
     try:
         ET.parse(OUTPUT_FILE)
         log.debug("XML valid ✓")
