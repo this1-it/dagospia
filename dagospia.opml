@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+    <head>
+        <title>Dagospia RSS Feeds</title>
+    </head>
+    <body>
+        <outline text="Dagospia" title="Dagospia" type="rss"
+                 xmlUrl="https://tisone.my.to/rss.xml?v=2"
+                 htmlUrl="https://m.dagospia.com/"/>
+    </body>
+</opml>
