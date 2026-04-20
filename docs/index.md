@@ -2,35 +2,13 @@
 
 > **Unofficial RSS feed for Dagospia** — Italy's most influential news aggregator, gossip portal, and political insider source.
 
+Stanco di visitare Dagospia ogni altro giorno
+per vedere se c'è qualche articolo interessante
+ho scritto un programmino che ogni ora
+scarica la home page del sito e crea un feed
+delle ultime notizie.
+
 **RSS Feed URL (constantly updated / aggiornato costantemente):**
-```
-https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
-```
-
----
-
-## 🇬🇧 English
-
-### What is Dagospia?
-
-Dagospia is Italy's most prominent news aggregator and gossip website, renowned for its behind-the-scenes reports, political leaks, and irreverent commentary. Founded on **May 22, 2000**, by journalist **Roberto D'Agostino**, it has become essential reading for the Italian ruling class, media professionals, and anyone following Italian politics and culture.
-
-Dagospia regularly breaks stories before traditional media outlets, making it a powerful force in shaping Italian public debate. The company, **Dagospia S.p.A.**, is headquartered in Rome.
-
-### What does Dagospia cover?
-
-- **Politics & Economy** — behind-the-scenes power plays, government leaks, and insider information on Italian and international politics
-- **Media & TV** — exclusive scoops on TV programs, RAI and Mediaset executive appointments, and audience ratings
-- **Cafonal** — the iconic photo gallery section documenting the social lives of the Italian elite, often with a satirical or kitsch lens
-- **Gossip & Society** — rumors and news on the private lives of Italian and international celebrities
-- **Finance & Business** — insider news on corporate Italy and economic power
-
-### RSS Feed
-
-This feed is **automatically and constantly updated** with the latest articles published on Dagospia.
-
-Subscribe by pasting this URL into any RSS reader (Feedly, NewsBlur, Reeder, Inoreader, etc.):
-
 ```
 https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
 ```
@@ -62,6 +40,36 @@ Per seguire Dagospia tramite RSS, incolla questo URL nel tuo lettore preferito (
 ```
 https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
 ```
+
+
+---
+
+## 🇬🇧 English
+
+### What is Dagospia?
+
+Dagospia is Italy's most prominent news aggregator and gossip website, renowned for its behind-the-scenes reports, political leaks, and irreverent commentary. Founded on **May 22, 2000**, by journalist **Roberto D'Agostino**, it has become essential reading for the Italian ruling class, media professionals, and anyone following Italian politics and culture.
+
+Dagospia regularly breaks stories before traditional media outlets, making it a powerful force in shaping Italian public debate. The company, **Dagospia S.p.A.**, is headquartered in Rome.
+
+### What does Dagospia cover?
+
+- **Politics & Economy** — behind-the-scenes power plays, government leaks, and insider information on Italian and international politics
+- **Media & TV** — exclusive scoops on TV programs, RAI and Mediaset executive appointments, and audience ratings
+- **Cafonal** — the iconic photo gallery section documenting the social lives of the Italian elite, often with a satirical or kitsch lens
+- **Gossip & Society** — rumors and news on the private lives of Italian and international celebrities
+- **Finance & Business** — insider news on corporate Italy and economic power
+
+### RSS Feed
+
+This feed is **automatically and constantly updated** with the latest articles published on Dagospia.
+
+Subscribe by pasting this URL into any RSS reader (Feedly, NewsBlur, Reeder, Inoreader, etc.):
+
+```
+https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+```
+
 
 ---
 
