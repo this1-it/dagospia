@@ -1,78 +1,159 @@
-# Dagospia RSS Feed — Aggiornato in Tempo Reale | Updated in Real Time
+---
+layout: default
+title: Dagospia RSS Feed – Unofficial XML Feed URL
+description: Unofficial Dagospia RSS feed. Updated automatically with the latest articles. Copy the XML feed URL and add it to Feedly, Inoreader, Reeder, or any RSS reader.
+permalink: /
+---
 
-> **Unofficial RSS feed for Dagospia** — Italy's most influential news aggregator, gossip portal, and political insider source.
+# Dagospia RSS Feed
 
-Stanco di visitare Dagospia ogni altro giorno
-per vedere se c'è qualche articolo interessante
-ho scritto un programmino che ogni ora
-scarica la home page del sito e crea un feed
-delle ultime notizie.
+**Unofficial XML feed URL for Dagospia, updated automatically.**
 
-**RSS Feed URL (constantly updated / aggiornato costantemente):**
-```
-https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
-```
+If you are looking for a **Dagospia RSS feed**, copy this URL and paste it into your RSS reader:
+
+    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+
+Works with **Feedly**, **Inoreader**, **NewsBlur**, **Reeder**, and most RSS readers.
 
 ---
 
 ## 🇮🇹 Italiano
 
-### Cos'è Dagospia?
+### Feed RSS di Dagospia
 
-Dagospia è il più influente aggregatore di notizie e sito di gossip italiano, celebre per i suoi retroscena politici, le indiscrezioni esclusive e il tono irriverente e satirico. Fondato il **22 maggio 2000** dal giornalista **Roberto D'Agostino**, è diventato una lettura imprescindibile per la classe dirigente italiana, i professionisti dei media e chiunque voglia restare aggiornato su politica, TV e costume italiano.
+Questa pagina fornisce un **feed RSS non ufficiale di Dagospia**.
 
-Dagospia anticipa spesso le notizie rispetto ai media tradizionali, riuscendo a influenzare il dibattito pubblico con scoop e retroscena in esclusiva. La società, **Dagospia S.p.A.**, ha sede a Roma.
+Il feed viene generato automaticamente e aggiornato con gli ultimi articoli pubblicati sulla home page di Dagospia.
 
-### Di cosa si occupa Dagospia?
+**URL del feed RSS di Dagospia:**
 
-- **Politica & Economia** — retroscena del potere, fughe di notizie dal governo, informazioni riservate sulla politica italiana e internazionale
-- **Media & TV** — scoop esclusivi su programmi televisivi, nomine dirigenziali RAI e Mediaset, ascolti e palinsesti
-- **Cafonal** — la storica sezione fotografica che documenta la vita mondana dell'élite italiana, spesso con un occhio satirico sul kitsch e sull'eccesso
-- **Gossip & Società** — voci e notizie sulla vita privata di personaggi famosi italiani e internazionali
-- **Finanza & Business** — insider news sul capitalismo italiano e sulle dinamiche del potere economico
+    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
 
-### Feed RSS
+Puoi incollare questo URL in qualsiasi lettore RSS, ad esempio:
 
-Questo feed RSS viene **aggiornato automaticamente e costantemente** con gli ultimi articoli pubblicati su Dagospia.
+- Feedly
+- Inoreader
+- NewsBlur
+- Reeder
 
-Per seguire Dagospia tramite RSS, incolla questo URL nel tuo lettore preferito (Feedly, NewsBlur, Reeder, Inoreader, ecc.):
+### Cos'è questo progetto?
 
-```
-https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
-```
+Visitare Dagospia manualmente ogni giorno non è molto comodo.  
+Per questo ho creato un piccolo script che scarica periodicamente la home page e genera un feed RSS XML aggiornato automaticamente.
 
+### Nota importante
+
+Questo è un **feed non ufficiale**.  
+Non è affiliato con Dagospia, Roberto D'Agostino o Dagospia S.p.A.
 
 ---
 
 ## 🇬🇧 English
 
-### What is Dagospia?
+### Dagospia RSS Feed
 
-Dagospia is Italy's most prominent news aggregator and gossip website, renowned for its behind-the-scenes reports, political leaks, and irreverent commentary. Founded on **May 22, 2000**, by journalist **Roberto D'Agostino**, it has become essential reading for the Italian ruling class, media professionals, and anyone following Italian politics and culture.
+This page provides an **unofficial Dagospia RSS feed**.
 
-Dagospia regularly breaks stories before traditional media outlets, making it a powerful force in shaping Italian public debate. The company, **Dagospia S.p.A.**, is headquartered in Rome.
+The feed is automatically generated and updated with the latest articles published on the Dagospia homepage.
 
-### What does Dagospia cover?
+**Dagospia RSS feed URL:**
 
-- **Politics & Economy** — behind-the-scenes power plays, government leaks, and insider information on Italian and international politics
-- **Media & TV** — exclusive scoops on TV programs, RAI and Mediaset executive appointments, and audience ratings
-- **Cafonal** — the iconic photo gallery section documenting the social lives of the Italian elite, often with a satirical or kitsch lens
-- **Gossip & Society** — rumors and news on the private lives of Italian and international celebrities
-- **Finance & Business** — insider news on corporate Italy and economic power
+    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
 
-### RSS Feed
+Paste this URL into any RSS reader, including:
 
-This feed is **automatically and constantly updated** with the latest articles published on Dagospia.
+- Feedly
+- Inoreader
+- NewsBlur
+- Reeder
 
-Subscribe by pasting this URL into any RSS reader (Feedly, NewsBlur, Reeder, Inoreader, etc.):
+### What is this?
 
-```
-https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
-```
+Checking Dagospia manually every day is inconvenient.  
+This project periodically fetches the homepage and generates an automatically updated XML RSS feed.
 
+### Important note
+
+This is an **unofficial feed**.  
+It is not affiliated with Dagospia, Roberto D'Agostino, or Dagospia S.p.A.
 
 ---
 
-## Keywords / Parole chiave
+## FAQ
 
-`dagospia rss` · `dagospia feed` · `dagospia notizie` · `roberto d'agostino` · `gossip italiano` · `politica italiana retroscena` · `cafonal` · `dagospia xml` · `italian news rss` · `italian gossip feed` · `dagospia aggiornato`
+### Is there a Dagospia RSS feed?
+
+Yes. This page provides an **unofficial Dagospia RSS feed** generated from the latest content available on the homepage.
+
+### What is the Dagospia RSS feed URL?
+
+Use this URL:
+
+    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+
+### Is this an official Dagospia feed?
+
+No. This is an unofficial RSS feed created independently.
+
+### How do I subscribe to the Dagospia RSS feed?
+
+Copy the feed URL and paste it into your RSS reader, such as Feedly, Inoreader, NewsBlur, or Reeder.
+
+### How often is the feed updated?
+
+The feed is updated automatically on a recurring basis.
+
+---
+
+## Keywords
+
+Dagospia RSS feed, Dagospia feed, Dagospia RSS, Dagospia XML feed, unofficial Dagospia RSS feed, Dagospia news feed, Dagospia Feedly, Dagospia Inoreader
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there a Dagospia RSS feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. This page provides an unofficial Dagospia RSS feed generated from the latest content available on the homepage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Dagospia RSS feed URL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this an official Dagospia feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This is an unofficial RSS feed created independently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I subscribe to the Dagospia RSS feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Copy the feed URL and paste it into your RSS reader, such as Feedly, Inoreader, NewsBlur, or Reeder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is the feed updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The feed is updated automatically on a recurring basis."
+      }
+    }
+  ]
+}
+</script>
