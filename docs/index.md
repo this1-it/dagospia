@@ -11,7 +11,10 @@ permalink: /
 
 If you are looking for a **Dagospia RSS feed**, copy this URL and paste it into your RSS reader:
 
-    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+<div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
+  <code id="feed-url">https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('feed-url').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
+</div>
 
 Works with **Feedly**, **Inoreader**, **NewsBlur**, **Reeder**, and most RSS readers.
 
@@ -27,7 +30,10 @@ Il feed viene generato automaticamente e aggiornato con gli ultimi articoli pubb
 
 **URL del feed RSS di Dagospia:**
 
-    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+<div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
+  <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml').then(()=>{this.textContent='Copiato!';setTimeout(()=>this.textContent='Copia',2000)})" style="padding:4px 10px;cursor:pointer;">Copia</button>
+</div>
 
 Puoi incollare questo URL in qualsiasi lettore RSS, ad esempio:
 
@@ -58,7 +64,10 @@ The feed is automatically generated and updated with the latest articles publish
 
 **Dagospia RSS feed URL:**
 
-    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+<div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
+  <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
+</div>
 
 Paste this URL into any RSS reader, including:
 
@@ -89,7 +98,10 @@ Yes. This page provides an **unofficial Dagospia RSS feed** generated from the l
 
 Use this URL:
 
-    https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml
+<div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
+  <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
+</div>
 
 ### Is this an official Dagospia feed?
 
