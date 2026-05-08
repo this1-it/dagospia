@@ -1,6 +1,6 @@
 # Dagospia RSS Feed — Aggiornato in Tempo Reale | Updated in Real Time
 
-> **Unofficial RSS feed for Dagospia** — Italy's most influential news aggregator, gossip portal, and political insider source.
+> **Indipendent RSS feed for Dagospia** — Italy's most influential news aggregator, gossip portal, and political insider source.
 
 **RSS Feed URL (constantly updated / aggiornato costantemente):**
 ```
