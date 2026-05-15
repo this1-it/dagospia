@@ -22,13 +22,13 @@ Works with **Feedly**, **Inoreader**, **NewsBlur**, **Reeder**, and most RSS rea
 
 ## 🇮🇹 Italiano
 
-### Feed RSS di Dagospia
+### RSS Feed di Dagospia
 
 Questa pagina fornisce un **feed RSS Indipendente di Dagospia**.
 
 Il feed viene generato automaticamente e aggiornato con gli ultimi articoli pubblicati sulla home page di Dagospia.
 
-**URL del feed RSS di Dagospia:**
+**URL del RSS feed di Dagospia:**
 
 <div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
   <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
