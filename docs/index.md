@@ -58,7 +58,7 @@ Non è affiliato con Dagospia, Roberto D'Agostino o Dagospia S.p.A.
 
 ### Dagospia RSS Feed
 
-This page provides an **indipendent Dagospia RSS feed**.
+This page provides an **independent Dagospia RSS feed**.
 
 The feed is automatically generated and updated with the latest articles published on the Dagospia homepage.
 
@@ -83,7 +83,7 @@ This project periodically fetches the homepage and generates an automatically up
 
 ### Important note
 
-This is an **indipendent feed**.  
+This is an **independent feed**.  
 It is not affiliated with Dagospia, Roberto D'Agostino, or Dagospia S.p.A.
 
 ---
@@ -92,7 +92,7 @@ It is not affiliated with Dagospia, Roberto D'Agostino, or Dagospia S.p.A.
 
 ### Is there a Dagospia RSS feed?
 
-Yes. This page provides an **indipendent Dagospia RSS feed** generated from the latest content available on the homepage.
+Yes. This page provides an **independent Dagospia RSS feed** generated from the latest content available on the homepage.
 
 ### What is the Dagospia RSS feed URL?
 
@@ -105,7 +105,7 @@ Use this URL:
 
 ### Is this an official Dagospia feed?
 
-No. This is an indipendent RSS feed created independently.
+No. This is an independent RSS feed created independently.
 
 ### How do I subscribe to the Dagospia RSS feed?
 
@@ -119,7 +119,7 @@ The feed is updated automatically on a recurring basis.
 
 ## Keywords
 
-Dagospia RSS feed, Dagospia feed, Dagospia RSS, Dagospia XML feed, indipendent Dagospia RSS feed, Dagospia news feed, Dagospia Feedly, Dagospia Inoreader
+Dagospia RSS feed, Dagospia feed, Dagospia RSS, Dagospia XML feed, independent Dagospia RSS feed, Dagospia news feed, Dagospia Feedly, Dagospia Inoreader
 
 <script type="application/ld+json">
 {
@@ -131,7 +131,7 @@ Dagospia RSS feed, Dagospia feed, Dagospia RSS, Dagospia XML feed, indipendent D
       "name": "Is there a Dagospia RSS feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. This page provides an indipendent Dagospia RSS feed generated from the latest content available on the homepage."
+        "text": "Yes. This page provides an independent Dagospia RSS feed generated from the latest content available on the homepage."
       }
     },
     {
@@ -147,7 +147,7 @@ Dagospia RSS feed, Dagospia feed, Dagospia RSS, Dagospia XML feed, indipendent D
       "name": "Is this an official Dagospia feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. This is an indipendent RSS feed created independently."
+        "text": "No. This is an independent RSS feed created independently."
       }
     },
     {
