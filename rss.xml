@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sun, 16 Aug 2026 05:03:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 05:38:12 +0000</lastBuildDate>
     <item>
       <title>CHI È ULRICH SIEGMUND, SOPRANNOMINATO DA “SPIEGEL” “L’UOMO PIÙ PERICOLOSO DELLA GERMANIA”– IL 35ENNE, ASTRO NASCENTE…</title>
       <link>https://m.dagospia.com/politica/e-ulrich-siegmund-soprannominato-spiegel-l-uomo-piu-pericoloso-483767</link>
@@ -61,6 +61,15 @@
       <category>media-tv</category>
       <enclosure url="https://static.dagospia.com/img/patch/08-2026/luisella-costamagna-turks-e-caicos-2296233_600_q50.webp" length="0" type="image/webp"/>
       <pubDate>Sat, 15 Aug 2026 19:10:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>“LA COSTRUZIONE DEL MITO CONTRIBUISCE A CAUSARE LA CADUTA DI UN SISTEMA QUANDO CROLLA L’EROE DI TURNO”– ROSARIA CAPACCHIONE,…</title>
+      <link>https://m.dagospia.com/cronache/rosaria-capacchione-costruzione-mito-contribuisce-causare-caduta-sistema-483680</link>
+      <description>“LA COSTRUZIONE DEL MITO CONTRIBUISCE A CAUSARE LA CADUTA DI UN SISTEMA QUANDO CROLLA L’EROE DI TURNO” – ROSARIA CAPACCHIONE, GIORNALISTA ANTI-MAFIA CHE VIVE DA ANNI SOTTO SCORTA, ASSISTE RASSEGNATA AL CASO RANUCCI-LAVITOLA: “ANDARE A MANGIARE SPAGHETTI PER RACCOGLIERE NOTIZIE È NORMALE, MA IL PUNTO È IL RAPPORTO DI AMICIZIA CON LA FONTE, CHE SI CHIAMA LAVITOLA E SORGONO DUE DOMANDE: CHI USA CHI? COME FAI A ESSERE SICURO DI NON ESSERE USATO?” – “LA NOSTRA CATEGORIA HA RESISTITO AL FASCISMO, AL TERRORISMO, ALLA MAFIA , MA STAVOLTA VEDO L’ASSUEFAZIONE. IL GIORNALISMO È FATTO DI DUBBI, DI CONFRONTO, NON DI COSTRUZIONE DEL NEMICO A TUTTI I COSTI”</description>
+      <guid isPermaLink="false">https://m.dagospia.com/cronache/rosaria-capacchione-costruzione-mito-contribuisce-causare-caduta-sistema-483680</guid>
+      <category>cronache</category>
+      <enclosure url="https://static.dagospia.com/img/patch/08-2026/ranucci-lavitola-rosaria-capacchione-2295966_600_q50.webp" length="0" type="image/webp"/>
+      <pubDate>Sat, 15 Aug 2026 19:01:00 +0200</pubDate>
     </item>
     <item>
       <title>IL RISPARMIO NON PORTA GUADAGNO -LA CONTINUA CHIUSURA DEGLI SPORTELLI BANCARI IN ITALIA (IN MEDIA 72 AL MESE) LASCIA INTERI…</title>
@@ -853,15 +862,6 @@
       <category>politica</category>
       <enclosure url="https://static.dagospia.com/img/patch/08-2026/giorgia-meloni-roberto-vannacci-antonio-tajani-2295885_600_q50.webp" length="0" type="image/webp"/>
       <pubDate>Fri, 14 Aug 2026 19:10:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>CHE CAOS SUL CASO RANUCCI-LAVITOLA – L’AVVOCATO DI VALTERINO, L’EX DEPUTATO DI AN SERGIO COLA, HA RIFERITO CHEDURANTE…</title>
-      <link>https://m.dagospia.com/cronache/quanto-caos-caso-ranucci-lavitola-l-avvocato-valterino-l-ex-deputato-an-483698</link>
-      <description>CHE CAOS SUL CASO RANUCCI-LAVITOLA – L’AVVOCATO DI VALTERINO, L’EX DEPUTATO DI AN SERGIO COLA, HA RIFERITO CHE DURANTE L’INTERROGATORIO IL SUO ASSISTITO AVREBBE DETTO: “NON ESCLUDO CHE SIGFRIDO SAPESSE DEL MIO PIANO”. LA PROCURA SMENTISCE CHE QUELLA FRASE SIA MAI STATA PRONUNCIATA. MA ALLORA PERCHÉ L’AVVOCATO L’HA RIFERITA? FORSE HA FATTO CONFUSIONE? E POI, PER LAVITOLA QUELL’INTUIZIONE (SEMPRE CHE CI SIA STATA) RANUCCI L’HA AVUTA PRIMA O DOPO L’ATTENTATO? - ANCHE GLI AVVOCATI DELLA BANDA DI ESECUTORI MATERIALI DELL’ATTENTATO SONO PRONTI A CHIEDERE L’INTERROGATORIO DEL GIORNALISTA DAVANTI AI PM</description>
-      <guid isPermaLink="false">https://m.dagospia.com/cronache/quanto-caos-caso-ranucci-lavitola-l-avvocato-valterino-l-ex-deputato-an-483698</guid>
-      <category>cronache</category>
-      <enclosure url="https://static.dagospia.com/img/patch/08-2026/valter-lavitola-sigfrido-ranucci-sergio-cola-2296029_600_q50.webp" length="0" type="image/webp"/>
-      <pubDate>Fri, 14 Aug 2026 19:05:00 +0200</pubDate>
     </item>
     <item>
       <title>DAGOREPORT –LA CRISI SUI FLUSSI MIGRATORI TRA ITALIA E SPAGNA È APPESA A CIÒ CHE SUCCEDERÀ DOMANI, 15 AGOSTO: UNA NUOVA…</title>
