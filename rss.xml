@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sat, 22 Aug 2026 03:52:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 04:43:45 +0000</lastBuildDate>
     <item>
       <title>WOODY ALLEN NON MOLLA UN CAZZO! -A 90 ANNI, IL GRANDE REGISTA E ATTORE GIRERÀ IL SUO 51ESIMO FILM, IN SPAGNA (IL TITOLO POTREBBE…</title>
       <link>https://m.dagospia.com/media-tv/woody-allen-non-ne-vuole-sapere-andare-in-pensione-90-anni-l-attore-484385</link>
@@ -756,6 +756,15 @@
       <pubDate>Fri, 21 Aug 2026 11:18:00 +0200</pubDate>
     </item>
     <item>
+      <title>LE PURGE DI HEGSETH –IL PENTAGONO SILURA L'EDITORE E IL CAPOREDATTORE DI “STARS AND STRIPES”, LA TESTATA DELLE FORZE ARMATE USA,…</title>
+      <link>https://m.dagospia.com/cronache/purge-hegseth-pentagono-silura-l-editore-stars-and-stripes-giornale-delle-484398</link>
+      <description>LE PURGE DI HEGSETH – IL PENTAGONO SILURA L'EDITORE E IL CAPOREDATTORE DI “STARS AND STRIPES”, LA TESTATA DELLE FORZE ARMATE USA, PARZIALMENTE FINANZIATA DAI CONTRIBUENTI AMERICANI – LA RIMOZIONE DI MAX LEDERER E ERIK SLAVIN È DOVUTA ALL'INSUBORDINAZIONE – LEDERER È STATO L'EDITORE DEL GIORNALE PER 19 ANNI E NEI GIORNI SCORSI AVEVA DETTO AI COLLEGHI CHE SAREBBE ANDATO IN PENSIONE IL 30 SETTEMBRE IN SEGUITO ALLE DIVERGENZE CON L'AMMINISTRAZIONE TRUMP…</description>
+      <guid isPermaLink="false">https://m.dagospia.com/cronache/purge-hegseth-pentagono-silura-l-editore-stars-and-stripes-giornale-delle-484398</guid>
+      <category>cronache</category>
+      <enclosure url="https://static.dagospia.com/img/patch/08-2026/pete-hegseth-stars-and-stripes-giornale-delle-forze-armate-statunitensi-2298169_600_q50.webp" length="0" type="image/webp"/>
+      <pubDate>Fri, 21 Aug 2026 11:15:00 +0200</pubDate>
+    </item>
+    <item>
       <title>LA RICONOSCETE DAI CESPUGLI? –LA SLANCIATA 33ENNE DALLA PARENTELA FAMOSA NON È MOLTO FORTUNATA IN AMORE,MA NON DEMORDE: DOPO LA…</title>
       <link>https://m.dagospia.com/media-tv/riconoscete-dai-cespugli-slanciata-33enne-dalla-parentela-famosa-none-484124</link>
       <description>LA RICONOSCETE DAI CESPUGLI? – LA SLANCIATA 33ENNE DALLA PARENTELA FAMOSA NON È MOLTO FORTUNATA IN AMORE, MA NON DEMORDE: DOPO LA FINE DELLA STORIA CON IL SUO ULTIMO FIDANZATO, QUALCHE SETTIMANA FA, AVREBBE SUBITO TROVATO UN NUOVO COMPAGNO. E SUBITO L’HA PORTATO A RIO DE JANEIRO, CITTÀ IN CUI LA SIGNORINA SI TROVA MOLTO A SUO AGIO NONOSTANTE L’UMIDITÀ…</description>
@@ -898,15 +907,6 @@
       <category>cronache</category>
       <enclosure url="https://static.dagospia.com/img/patch/07-2024/emma-marrone-2013321_600_q50.webp" length="0" type="image/webp"/>
       <pubDate>Fri, 21 Aug 2026 09:12:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>LA MOSSA DEL CAVALLO DI LUIGI LOVAGLIO –LA DOPPIA OPS SU BPM E BANCA GENERALI VALE 34 MILIARDI DI EURO, E POTREBBE CREARE UN…</title>
-      <link>https://m.dagospia.com/business/mossa-cavallo-luigi-lovaglio-doppia-ops-bpm-banca-generali-vale-34-484291</link>
-      <description>LA MOSSA DEL CAVALLO DI LUIGI LOVAGLIO – LA DOPPIA OPS SU BPM E BANCA GENERALI VALE 34 MILIARDI DI EURO, E POTREBBE CREARE UN TERZO POLO BANCARIO DA 70 MILIARDI – L’OFFERTA PER BANCA GENERALI HA UN PREMIO DEL 10%, QUELLA SUL BANCO A PREZZO DI MERCATO. PER INGOLOSIRE GLI AZIONISTI (L’OK ALL’OPERAZIONE DOVRÀ ARRIVARE DALL’ASSEMBLEA STRAORDINARIA DEI SOCI), LOVAGLIO METTE SUL PIATTO 4 MILIARDI DI DIVIDENDI AI SOCI – IL PRIMO AZIONISTA DEL NUOVO GRUPPO SAREBBE STRANIERO (ALLA FACCIA DEL POLO TRICOLORE): IL CREDIT AGRICOLE AVREBBE IL 10% DEL NUOVO ISTITUTO. MA POTREBBE ESSERE “LIQUIDATO” CON GLI SPORTELLI DI BPM IN ECCEDENZA...</description>
-      <guid isPermaLink="false">https://m.dagospia.com/business/mossa-cavallo-luigi-lovaglio-doppia-ops-bpm-banca-generali-vale-34-484291</guid>
-      <category>business</category>
-      <enclosure url="https://static.dagospia.com/img/patch/08-2026/luigi-lovaglio-carlo-messina-mps-monte-dei-paschi-di-siena-2297873_600_q50.webp" length="0" type="image/webp"/>
-      <pubDate>Fri, 21 Aug 2026 09:03:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
