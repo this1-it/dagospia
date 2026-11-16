@@ -12,9 +12,11 @@ permalink: /
 If you are looking for a **Dagospia RSS feed**, copy this URL and paste it into your RSS reader:
 
 <div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
-  <code id="feed-url">https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
+  <code id="feed-url">https://this1-it.github.io/dagospia/rss.xml</code>
   <button onclick="navigator.clipboard.writeText(document.getElementById('feed-url').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
 </div>
+
+Mirror: <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
 
 Works with **Feedly**, **Inoreader**, **NewsBlur**, **Reeder**, and most RSS readers.
 
@@ -31,9 +33,11 @@ Il feed viene generato automaticamente e aggiornato con gli ultimi articoli pubb
 **URL del RSS feed di Dagospia:**
 
 <div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
-  <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
-  <button onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml').then(()=>{this.textContent='Copiato!';setTimeout(()=>this.textContent='Copia',2000)})" style="padding:4px 10px;cursor:pointer;">Copia</button>
+  <code>https://this1-it.github.io/dagospia/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText('https://this1-it.github.io/dagospia/rss.xml').then(()=>{this.textContent='Copiato!';setTimeout(()=>this.textContent='Copia',2000)})" style="padding:4px 10px;cursor:pointer;">Copia</button>
 </div>
+
+Mirror alternativo: <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
 
 Puoi incollare questo URL in qualsiasi lettore RSS, ad esempio:
 
@@ -65,9 +69,11 @@ The feed is automatically generated and updated with the latest articles publish
 **Dagospia RSS feed URL:**
 
 <div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
-  <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
-  <button onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
+  <code>https://this1-it.github.io/dagospia/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText('https://this1-it.github.io/dagospia/rss.xml').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
 </div>
+
+Mirror: <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
 
 Paste this URL into any RSS reader, including:
 
@@ -99,9 +105,11 @@ Yes. This page provides an **independent Dagospia RSS feed** generated from the 
 Use this URL:
 
 <div style="display:flex;align-items:center;gap:8px;margin:1em 0;">
-  <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
-  <button onclick="navigator.clipboard.writeText('https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
+  <code>https://this1-it.github.io/dagospia/rss.xml</code>
+  <button onclick="navigator.clipboard.writeText('https://this1-it.github.io/dagospia/rss.xml').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="padding:4px 10px;cursor:pointer;">Copy</button>
 </div>
+
+Mirror: <code>https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml</code>
 
 ### Is this an official Dagospia feed?
 
@@ -139,7 +147,7 @@ Dagospia RSS feed, Dagospia feed, Dagospia RSS, Dagospia XML feed, independent D
       "name": "What is the Dagospia RSS feed URL?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml"
+        "text": "https://this1-it.github.io/dagospia/rss.xml (mirror: https://raw.githubusercontent.com/this1-it/dagospia/main/rss.xml)"
       }
     },
     {
